@@ -1,146 +1,358 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>TripCo Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="full-body">
-        <h1 style="color: white;">My Website</h1>
-        <button style="position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 10px 15px;
-        background-color: #333;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;" id="theme-toggle">Github</button>
-        <button style="position: fixed;
-        top: 20px;
-        right: 100px;
-        padding: 10px 15px;
-        background-color: #333;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;" id="theme-toggle">Instagram</button>
-        
-    </div>
-    <div class="home">
-        <h1>My Resume</h1>
-        <hr>
-        <img src="https://t3.ftcdn.net/jpg/03/53/11/00/360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" alt="Profile Picture  ">
-        <h3>Cyber Security Professional | Ethical hacker | Full stack develop</h3>
+    <header>
+        <nav>
+            <h1>TripCo</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#popular">Popular Places</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#adventure">Adventure</a></li>
+                <li><a href="#book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Explore the whole world and enjoy its beauty</h2>
+        <div class="search-container">
+            <div class="search-bg"></div>
+            <div class="search-box">
+                <input type="text" placeholder="Search Destination">
+                <button>Search</button>
+            </div>
         </div>
-        <hr>
-    <div class="about">
-        <p>Name : Surendra.S</p>
-        <p>Age : 19yrs.</p>
-        <p>DOB : 26th Jan 2005.</p>
-        <p>Hobbies : Music production , Dancing , Fighting.</p>
-        <p>Achievements : Jumping , Walking , Singing , Flying.</p>
-        <p>Awards : Padmashree award , Best innovators award , National Award for Innovation in Cybersecurity.</p>
-    </div>
-    <hr>
-    <div class="education">
-        <h2>Education</h2>
-        <p>School : St.Philomena's English School.</p>
-        <p>PUC : Infomatics National PU College.</p>
-        <p>Degree : Dayananda Sagar College of Engineering.</p>
-        <p>Branch : Cyber Security.</p>
-    </div>
-    <hr>
-    <div class="skill">
-        <h2>Skills</h2>
-        <p>Cybersecurity (Bug bounty, ethical hacking, security research)</p>
-        <p>Programming Languages (Python, JavaScript, etc.)</p>
-        <p>Web Development (HTML, CSS, JavaScript, GitHub Pages)</p>
-        <p>Android Development (Beginner-friendly guides, UI/UX understanding)</p>
-        <p>Game Development (Gaming browser concept)</p>
-    </div>
-    <hr>
-    <div class="project">
-        <h2>Projects</h2>
-            <h3>1. ArkaCybSec Website</h3>
-            <p>A website focused on stock services, hosted on GitHub Pages.</p>
-            <h3>2. Fully Interactive Android Guide</h3>
-            <p>A website to help beginners understand the Android interface.</p>
-            <h3>3. Gaming Browser (Mobile-First)</h3>
-            <p>A custom gaming-focused web browser designed for mobile users.</p>
-            <h3>4. Quiz Website</h3>
-            <p>A quiz-based website with the same design as ArkaCybSec.</p>
-            <h3>5. Resume Website (In Progress)</h3>
-            <p>A personal portfolio website showcasing skills, projects, and achievements.</p>
-            <h3>6. Gun Shop Website (Planned)</h3>
-            <p>A website for selling and showcasing firearms.</p>
-            <h3>7. Tech Content for Instagram</h3>
-            <p>Posting tech videos, tech tips, and voice-over reels.</p>
-    </div>
-    <style>
+        
+        
+    </section>
+    
+    <section id="popular">
+        <h2>Popular Places</h2>
+        <div class="places">
+            <div class="place"><img src="https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/1282352-istock-504912968.jpg" alt="BC Adventure"><p>BC, Adventure</p></div>
+            <div class="place"><img src="https://res-1.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1645708829/chiba/H_00336_001" alt="Disneyland Tokyo"><p>Disneyland Tokyo</p></div>
+            <div class="place"><img src="https://www.worldatlas.com/upload/f1/02/0e/shutterstock-1053409016.jpg" alt="Hawaii Island"><p>Hawaii Island</p></div>
+            <div class="place"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtOGVgK5DXm2PHmmGDz6VVoBu39iuB17-wbQ&s" alt="Santorini Greece"><p>Santorini, Greece</p></div>
+        </div>
+    </section>
+    
+    <section id="explore">
+        <h2>Explore More</h2>
+        <div class="places">
+            <div class="place"><img src="https://iheartitaly.co/wp-content/uploads/2019/09/Italy-Travel-Guide-Amalfi-Coast.jpg" alt="Amalfi Coast"><p>Amalfi Coast</p></div>
+            <div class="place"><img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGFqJTIwbWFoYWwlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D" alt="Taj Mahal"><p>Taj Mahal</p></div>
+            <div class="place"><img src="https://lp-cms-production.imgix.net/features/2017/09/dubai-marina-skyline-2c8f1708f2a1.jpg?auto=compress&format=auto&fit=crop&q=50&w=1200&h=800" alt="Dubai"><p>Dubai</p></div>
+            <div class="place"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4iREdqYQ6OqV5TM8K87VDR9T0LH8NPcOi3w&s" alt="Osaka Castle"><p>Osaka Castle</p></div>
+        </div>
+    </section>
+    
+    <section id="adventure">
+        <h2>Let’s go on an adventure</h2>
+        <div class="adventure-list">
+            <div class="place"><img src="https://paristickets.tours/wp-content/uploads/2022/09/paris-at-spring.jpg" alt="Paris"><p>Paris</p></div>
+            <div class="place"><img src="https://res.cloudinary.com/dtljonz0f/image/upload/shutterstock_329662223_ss_non-editorial_3_csm8lw" alt="New York"><p>New York</p></div>
+            <div class="place"><img src="https://www.worldatlas.com/upload/88/3b/8e/pura-ulun-danu-bratan-temple-bali-indonesia-guitar-photographer.jpg" alt="Bali"><p>Bali</p></div>
+            <div class="place"><img src="https://www.agoda.com/wp-content/uploads/2024/04/Featured-image-Hong-Kong-Harbour.jpg" alt="Hong Kong"><p>Hong Kong</p></div>
+        
+           
+        </div>
+    </section>
+    
+    <section id="book">
+        <h2>Book tickets and go now!</h2>
+        
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4XeNRxrjJfw?si=-y5Sh2RgvH6fc4kl" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <section id="book">
+            <h2>Book Your Next Adventure</h2>
+            <p>Plan your dream vacation with ease. Choose your destination and date now!</p>
+            <div class="booking-form">
+                <input type="text" placeholder="Enter Destination">
+                <input type="date">
+                <button class="book-btn">Book Now</button>
+            </div>
+        </section>
+                
+      </section>
+      <section id="ratings">
+        <h2>User Ratings</h2>
+        <div class="stars">
+            <span>⭐</span>
+            <span>⭐</span>
+            <span>⭐</span>
+            <span>⭐</span>
+            <span>⭐</span>
+            <p>4.9/5 (1B+ reviews)</p>
+        </div>
+        <button class="rate-btn">Rate Us</button>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+<style>
     body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: rgb(160, 160, 160);
-        color: #fff;
+        background-color: #f0f4f8;
+        color: #333;
+    }
+    header {
+        background: #ffffff;
+        padding: 20px;
         text-align: center;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     }
-    .full-body {
-        width: auto;
-        padding: 1px;
-        background: rgba(0, 0, 0, 0.85);
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.85);
-      }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    nav ul li a:hover {
+        color: #007bff;
+    }
+    #home {
+        text-align: center;
+    padding: 60px;
+    background: url('https://worlds50beaches.com/assets/images/world-2024/011.webp') center/cover no-repeat;
+    color: white;
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px auto; /* Centers the section if it has a fixed width */
+    max-width: 90%; /* Adjust width as needed */
+    }
 
-     .home {
-        margin: 20px auto;
-        width: 80%;
+    .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.search-bg {
+    width: 80%;
+    height: 300px;
+    background: url('your-image.jpg') center/cover no-repeat;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+.search-box input {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #4facfe;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #00f2fe;
+    box-shadow: 0px 0px 10px rgba(0, 242, 254, 0.5);
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    box-shadow: 0px 5px 15px rgba(0, 242, 254, 0.4);
+}
+
+
+
+    .places {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
         padding: 20px;
-        background: rgba(255, 255, 255, 0.85);
+    }
+    .place {
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .place:hover {
+        transform: scale(1.05);
+    }
+    .place img {
+        width: 100%;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgb(100, 100, 100);
-      }
-
-     .about ,.education, .skill, .project {
-        margin: 20px auto;
-        width: 80%;
+    }
+    .adventure-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
         padding: 20px;
-        background: rgba(255, 255, 255, 0.85);
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgb(100, 100, 100);
-        text-align: left;
-        
     }
-
-    h1, h2, h3, p {
-        color: #000000;
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
     }
+    .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
 
-    img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid rgb(100, 100, 100);
-        box-shadow: 0 0 10px rgb(100, 100, 100);
-    }
+.video-container iframe {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 15px; /* Optional: Rounded corners */
+}
+#ratings {
+    text-align: center;
+    padding: 40px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    hr {
-        width: 60%;
-        height: 2px;
-        background: linear-gradient(to right, #000000, transparent);
-        border: none;
-        margin: 20px auto;
-        border-radius: 5px;
-    }
+.stars {
+    font-size: 28px;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
 
-    </style>
+#ratings p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 5px;
+}
 
+.rate-btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    
-</body>
+.rate-btn:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    box-shadow: 0px 5px 15px rgba(0, 242, 254, 0.4);
+}
+#book {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 600px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#book h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#book p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.booking-form input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.booking-form input:focus {
+    border-color: #00f2fe;
+    box-shadow: 0px 0px 10px rgba(0, 242, 254, 0.4);
+}
+
+.book-btn {
+    width: 85%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    box-shadow: 0px 5px 15px rgba(0, 242, 254, 0.4);
+}
+
+</style>
 </html>
